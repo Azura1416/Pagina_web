@@ -1,0 +1,34 @@
+*{/*Hace alusión a todo lo concerniente a los estilos designando toda la página*/
+    margin:  10;/* DEFINE EL ESPACIO EXTERIOR ALREDEDOR DE UN ELEMENTO*/
+    padding: 10;/* DEFINE EL ESPACIO INTERIOR DE UN ELEMENTO SI TIENE TEXTO (ALREDEDOR DE UN TEXTO Y EL BORDE DEL FORMULARIO)*/
+    box-sizing: border-box;/*  */
+    font-family: sans-serif; /* tipo de letra del texto*/
+    
+}
+body {/*SELECCIONA EL CUERPO GENERAL DE TODO LO QUE ESTE DENTRO DE LA ETIQUETA <BODY>*/
+    display: flex;/*DICE QUE QUIERE QUE EL CONTENIDO SEA FLEXIBLE*/
+    align-items: center;/*DICE QUE ALINEAR ITEMS(FORMULARIO EN ESTE CASO) AL CENTRO */
+    /*ALINEAR-ITEMS LOS ORGANIZA DE ARRIBA HACIA ABAJO*/
+    justify-content:center;/*JUSTIFICAMOS EL CONTENIDO(FORMULARIO) DE DERECHA A IZQUIERDA, EN ESTE CASO EL CENTRO*/
+    min-height: 90vh;/*DICE CUAL DEBE SER LA ALTURA MINIMA: DEFINE EL ESPACIO DE EL BORDE DE ARRIBA Y CUANTO DEBE BAJAR EL CONETIDO DESIGNADO(ESPACIO ENTRE FORMULARIO Y BORDE SUEPRIOR DE LA PAGINA)*/
+    background: linear-gradient(to right, red, blue);/*CREAMOS AL OPCION DE COMBINAR DOS COLORES PARA EL COLOR DE FONDO*/
+}
+form {/*DICE QUE LO QUE VA ORDENAR AFECTARA A TODO DENTRO DE <FORM>*/
+    display: flex;/*DICE QUE QUIERE QUE EL CONTENIDO (DISPLAY) SEA FLEXIBLE*/
+    flex-direction: column;/*DICE LA DIRECCION EN QUE ORGANIZAN LOS ELEMENTOS, EN ESTE CASO A MANERA DE COLUMNAS(ETIQUETAS Y TODO)*/
+    background: whitesmoke;/*DICE EL COLOR QUE SE LLAMA PARA EL FORMULARIO*/
+    text-align: center;/*ALINEA EL TEXTO DENTRO DEL FORMULARIO (EN ESTE CASO EL TITULO)*/
+    padding: 25px;/*AUMENTA O DISMIUYE EL ESPACIO DENTRO DEL FORMULARIO DEL TEXTO A CADA BORDE DEL CUADRO*/
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+    
+
+}
+form .title { /* SE REFIERE AL ESTILO Y TAMAÑO DE LETRA DEL TITULO */
+    color: black;/* COLOR DE LA LETRA*/
+    font-size: 35px; /* TAMAÑO DE LA LETRA */
+    margin-bottom: 30px;/* GROSOR DEL TEXTO */
+}
+
+form label {/* TODOS LOS QUE ESTEN CON LA ETIQUETA LABEL TENDRAN ESTE FORMATO */
+    margin-bottom: 10px;/*  espacio o(margen) en la parte inferior de algo. Este margen empuja el siguiente contenido hacia abajo, creando espacio con lo que sigue */
+}

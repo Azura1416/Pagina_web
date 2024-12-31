@@ -1,0 +1,57 @@
+<!-- Iniciemos colocando el nombre del Archivo con la extension(.html) -->
+<!-- escribe html: 5 y te saldra la base -->
+
+<!DOCTYPE html>
+<html lang="es"><!-- el lenguaje es español-->
+
+<html>
+    <head>
+        <meta charset="UTF-8"> <!-- dice el tipo de caracteres (por defecto sale este para aguantar todo)-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- para especificarle la funcion de que se pueda ver en pc y movil-->
+        <Title> My tienda Virtual</Title><!-- Titulo de la pestaña-->
+        <!-- aqui puedes referenciar el archivo.css para los estilos que desees.-->
+
+        <link rel="stylesheet" href="stylesheet.css"><!-- para vincular los estilos-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <!-- llamar estilos , en este caso de una pagina externa para iconos del log in-->
+    </head>
+
+    <body>
+        <!-- LOG IN-->
+
+        <form action=""><!-- creamos un formulario simple si ninguna accion-->
+
+         <h1 class="title">Login</h1><!-- titulo del formulario, en este caso (My tienda Virtual) -->
+           
+          <!-- USUARIO-->
+
+           <p><!-- para separar parrafos -->
+              <label><!--es una etiqueta (en este caso para poner el nombre de usuario)-->
+                <i class="fa-solid fa-user"></i><!-- llamamos a una imagen para el usuario(solo es un estilo para user)-->
+                <input type="text" id="username"><!-- Es una entrada para poner el usuario-->
+              </label><!-- fin de la etiqueta para poner el usuario-->
+            </p><!-- cierra el parrafo-->
+
+          <!-- CONTRASEÑA-->
+
+            <p><!-- abre un parrafo nuevo-->
+            <label><!-- abre una nueva etiqueta-->
+                <i class="fa-solid fa-lock"></i><!-- llama a la imagen al lado de contraseña(es el candado)-->
+                <input type="password" id="password"><!-- coloca el espacio para poner la contraseña-->
+            </label><!-- cierra la etiqueta-->
+            </p><!-- cierra el parrafo-->
+         
+          <!-- RESTABLECER CONTRASEÑA-->
+
+            <a href="">¿Olvidaste tu contraseña?</a><!-- es una extension extra para restablecer contraseña-->
+           
+          <!-- BOTON DE INGRESO-->
+
+            <button id="button">Log in</button><!-- es el boton para ingresar-->
+        </form><!-- cierra el formulario-->
+
+        
+    </body>
+    </html>
+</html>
